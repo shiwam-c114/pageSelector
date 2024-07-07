@@ -31,8 +31,7 @@ const PageSelector = () => {
           onChange={()=>{}}
             type="checkbox"
             className={`appearance-none w-[1.4rem] h-[1.4rem] border rounded-md cursor-pointer
-            ${checkeded && hovered ? "bg-blue-500 border-blue-500" : ""}
-            ${checkeded? "bg-blue-500 border-blue-600" : ""}
+            ${checkeded?  hovered ?"bg-blue-500 border-blue-500":"bg-blue-600 border-blue-600" : ""}
             ${pressed ? "ring-4 ring-blue-100 " : ""}
             ${hovered ? "border-gray-300" : "border-gray-200"} 
             ${pressed ? "border-gray-400" : ""}
