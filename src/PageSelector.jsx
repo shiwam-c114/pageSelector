@@ -12,7 +12,7 @@ const PageSelector = () => {
   const pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6"];
 
   const CustomCheckbox = ({ page, checkeded, onClick }) => {
-    console.log(checkeded, "chked")
+    // console.log(checkeded, "chked")
     const [hovered, setHovered] = useState(false);
     const [pressed, setPressed] = useState(false);
     return (
@@ -66,7 +66,7 @@ const PageSelector = () => {
       {/* <div className="bg-blue-500 border-blue-600"> good</div> */}
       <div className="w-[25rem] border border-gray-100 bg-white rounded-lg shadow-custom p-4 font-montserrat text-sm font-[300] flex flex-col h-[21rem]">
         <div className="-mt-1 px-1">
-          {console.log(selectedPages.length === pages.length, "consoel")}
+          {/* {console.log(selectedPages.length === pages.length, "consoel")} */}
           <CustomCheckbox
             page="All pages"
             checkeded={selectedPages.length === pages.length}
@@ -81,7 +81,7 @@ const PageSelector = () => {
         <div className="overflow-y-auto overflow-hidden hide-scrollbar px-1">
           {pages.map((page) => (
         <>
-          {console.log(selectedPages.includes(page), "consoel", page)}
+          {/* {console.log(selectedPages.includes(page), "consoel", page)} */}
 
             <CustomCheckbox
               key={page}
